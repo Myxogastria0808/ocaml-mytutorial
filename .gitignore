@@ -1,2 +1,7 @@
 # Nix
 /.direnv
+
+# OCaml
+*.out
+*.cmi
+*.cmo
