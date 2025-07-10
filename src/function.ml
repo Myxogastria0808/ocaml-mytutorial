@@ -65,6 +65,17 @@ print_endline (string_of_int cube_result);;
 let sq_sum n =
   sigma ((fun x -> x * x), n) ;;
 
+(*
+  - ベータ簡約
+  匿名関数 (以下は、匿名関数ではないが) に具体的な値を適用すること。
+
+  - ラムダ計算
+  λx. x * x
+  - OCamlの匿名関数
+  fun x -> x * x
+  - ベータ簡約
+  (fun x -> x * x) 3
+*)
 print_endline (string_of_int (sq_sum 3));;
 
 (* m という引数を取る cb_sum という高階関数を定義 *)
