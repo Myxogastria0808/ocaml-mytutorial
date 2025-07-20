@@ -1,5 +1,5 @@
 {
-  description = "ocaml flake sample";
+  description = "ocaml-mytutorial";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     flake-utils.url = "github:numtide/flake-utils";
@@ -16,9 +16,11 @@
         devShells.default = pkgs.mkShell {
           packages = with pkgs; [
             ocaml
-            # ocaml editor
-            ocaml-top
+            opam
           ];
+          shellHook = ''
+              eval $(opam env --switch=default)
+          '';
         };
       }
     );
