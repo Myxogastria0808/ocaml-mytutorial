@@ -56,6 +56,7 @@ You should select the 5th (5. No, I'll remember to run eval $(opam env) when I n
 ```sh
 touch .ocamlformat
 ```
+
 3. install `ocaml-lsp-server` and `ocamlformat`
 
 ```sh
