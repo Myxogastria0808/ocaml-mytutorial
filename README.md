@@ -1,7 +1,9 @@
 
 ## Setup
 
-0. set `flake.nix`
+0. set `flake.nix` and `.envrc`
+
+- flake.nix
 
 ```nix
 {
@@ -31,6 +33,12 @@
       }
     );
 }
+```
+
+- .envrc
+
+```sh
+use flake
 ```
 
 1. initialize opam
